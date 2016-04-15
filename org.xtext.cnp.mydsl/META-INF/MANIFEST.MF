@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.cnp.mydsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.cnp.mydsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.util,
+ org.antlr.runtime,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common,
+ org.eclipse.xtext.xbase.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: org.xtext.cnp.mydsl.serializer,
+ org.xtext.cnp.mydsl.services,
+ org.xtext.cnp.mydsl.parser.antlr.internal,
+ org.xtext.cnp.mydsl.myDsl.impl,
+ org.xtext.cnp.mydsl.scoping,
+ org.xtext.cnp.mydsl.myDsl,
+ org.xtext.cnp.mydsl,
+ org.xtext.cnp.mydsl.generator,
+ org.xtext.cnp.mydsl.validation,
+ org.xtext.cnp.mydsl.parser.antlr,
+ org.xtext.cnp.mydsl.myDsl.util
+Import-Package: org.apache.log4j
